@@ -1,7 +1,7 @@
 'use strict'
 
-const daysOfWeek = document.querySelector('.day_of_week')
-const utcTime = document.querySelector('.utc_time')
+const daysOfWeek = document.querySelector('[data-testId="currentDayOfTheWeek"]')
+const utcTime = document.querySelector('[data-testId="currentUTCTime"]')
 
 function getCurrentDataOfWeek() {
   const daysOfWeek = [

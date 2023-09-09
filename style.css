@@ -14,7 +14,7 @@ body {
   padding: 0 0.5rem;
 }
 
-.container {
+main {
   margin: 0 auto;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -24,13 +24,13 @@ body {
   width: 100%;
   max-width: 500px;
 }
-.image-wrapper {
+div:first-child {
   text-align: center;
   align-self: center;
   padding-top: 2rem;
   width: 250px;
 }
-.name-wrapper {
+div:nth-child(2) {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -38,12 +38,12 @@ body {
   margin: 0 auto;
   padding: 1rem 0;
 }
-.time-wrapper {
+div:nth-child(3) {
   text-align: center;
 }
 
-.github {
-  margin-top: 2rem;
+div:nth-child(4) a {
+  margin: 2rem 0;
   width: 100%;
   display: block;
   text-align: center;
@@ -53,10 +53,9 @@ body {
   padding: 0.5rem 0;
   text-decoration: none;
   transition: background 300ms, color 300ms, border 300ms;
-  margin-bottom: 2rem;
 }
 
-.github:hover {
+div:nth-child(4) a:hover {
   background: transparent;
   color: #000000;
   border-color: #000000;
@@ -71,15 +70,15 @@ img {
 }
 
 @media screen and (min-width: 485px) {
-  .container {
+  main {
     max-width: 500px;
     padding: 0 2rem;
   }
-  .name-wrapper {
+  div:nth-child(2) {
     font-size: 1.2rem;
   }
 
-  .time-wrapper {
+  div:nth-child(3) {
     font-size: 1.5rem;
   }
 }

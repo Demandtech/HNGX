@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="container">
-      <div class="image-wrapper">
+    <main>
+      <div>
         <img
           src="./assets/unnamed.jpeg"
           alt="demand"
@@ -16,22 +16,22 @@
           loading="lazy"
         />
       </div>
-      <div class="name-wrapper">
+      <div>
         <span data-testid="slackUserName">Demand</span>
-        <p class="track" data-testid="myTrack">Frontend Intern</p>
+        <p data-testid="myTrack">Frontend Intern</p>
       </div>
-      <div class="time-wrapper">
-        <span class="day_of_week" data-testid="currentDayOfTheWeek"></span>,
-        <span class="utc_time" data-testid="currentUTCTime">00:00:00</span>
+      <div>
+        <span data-testid="currentDayOfTheWeek"></span>,
+        <span data-testid="currentUTCTime">00:00:00</span>
       </div>
-
-      <a
-        class="github"
-        href="https://github.com/Demandtech/HNGX"
-        data-testid="“githubURL”"
-        target="_blank"
-        >Github Repository</a
-      >
+      <div>
+        <a
+          href="https://github.com/Demandtech/HNGX"
+          data-testid="“githubURL”"
+          target="_blank"
+          >Github Repository</a
+        >
+      </div>
     </main>
     <script type="text/javascript" src="./app.js"></script>
   </body>
