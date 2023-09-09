@@ -24,13 +24,13 @@ main {
   width: 100%;
   max-width: 500px;
 }
-div:first-child {
+article:first-child {
   text-align: center;
   align-self: center;
   padding-top: 2rem;
   width: 250px;
 }
-div:nth-child(2) {
+article:nth-child(2) {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -38,11 +38,11 @@ div:nth-child(2) {
   margin: 0 auto;
   padding: 1rem 0;
 }
-div:nth-child(3) {
+article:nth-child(3) {
   text-align: center;
 }
 
-div:nth-child(4) a {
+article:nth-child(4) a {
   margin: 2rem 0;
   width: 100%;
   display: block;
@@ -55,7 +55,7 @@ div:nth-child(4) a {
   transition: background 300ms, color 300ms, border 300ms;
 }
 
-div:nth-child(4) a:hover {
+article:nth-child(4) a:hover {
   background: transparent;
   color: #000000;
   border-color: #000000;
@@ -74,11 +74,11 @@ img {
     max-width: 500px;
     padding: 0 2rem;
   }
-  div:nth-child(2) {
+  article:nth-child(2) {
     font-size: 1.2rem;
   }
 
-  div:nth-child(3) {
+  article:nth-child(3) {
     font-size: 1.5rem;
   }
 }
