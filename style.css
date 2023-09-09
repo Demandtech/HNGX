@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 0.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  border-radius: 10px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .image-wrapper {
+    text-align: center;
+    & img {
+      width: 200px;
+      height: 200;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .name-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  .time-wrapper {
+    text-align: center;
+  }
+  .github {
+    margin-top: 2rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background: #000000;
+    border: 1.5px solid #000000;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    transition: background 300ms, color 300ms, border 300ms;
+
+    &:hover {
+      background: transparent;
+      color: #000000;
+      border-color: #000000;
+    }
+  }
+}
+
+.container {
+  min-height: 400px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 485px) {
+  header {
+    max-width: 500px;
+    padding: 0 2rem;
+  }
+}
